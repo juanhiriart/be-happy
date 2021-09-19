@@ -1,0 +1,254 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+}
+
+body
+{
+    font-size: 62.5%;
+    padding: 0;
+}
+
+#topbar
+{
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+    height: 66px;
+    overflow-x: hidden;
+}
+
+#logo
+{
+    margin-top: 15px;
+    margin-left: 32px;
+    cursor: pointer;
+    /*border: 1px solid red;*/
+}
+
+#links
+{
+    display: inline-flex;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 20px; 
+    margin-left: 5%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.6em;
+    width:25%;
+}
+
+#links a
+{
+    color: rgba(142, 119, 232, 1);
+    text-decoration: none;
+    padding: 5px;
+}
+
+button
+{
+    background-color: rgba(133, 108, 234, 0.9);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+#top-button
+{
+    position: absolute;
+    margin-top: 14px;
+    right:120px;
+    width: 145px;
+    height: 40px;
+}
+
+#stack-button
+{
+    position: absolute;
+    margin-top:22px;
+    right:17px; 
+    cursor: pointer;
+}
+
+#header
+{
+    position: relative;
+    background: url(assets/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#julieta
+{
+    margin-left: 45%;
+    margin-top: 65px;   
+    min-width:30%;
+    z-index: 2;
+    object-fit: contain;
+}
+
+.title
+{   
+    position: absolute;
+    color: white;
+    width: 50%;
+    margin-left: 55%;
+    margin-top: 140px;
+    text-align: right;
+    transform: translate(-100%);
+}
+
+.title h1
+{
+    font-size: 15em;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title h2
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 4.1em;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Title for  mobile  devices */
+.title-mobile
+{   
+    display: none;
+    color: rgba(133, 108, 234, 0.9);
+    width: 100%;
+    margin-left: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.title-mobile h1
+{
+    font-size: 11.2em;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title-mobile h2
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 4.1em;
+    font-weight: 600;
+    font-style: italic;
+}
+
+#down-arrow
+{
+    position: absolute;
+    bottom:0;
+    margin-left:50%;
+    transform: translate(-50%);
+}
+
+.container
+{
+    width:80%;
+    margin: 0 auto;
+    /*background-color: rgb(215, 215, 215);*/
+}
+
+.container h3
+{
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.8em;
+    font-weight: 600;
+    font-style: italic;
+    color: rgba(133, 108, 234, 0.9);
+    width:100%;
+    margin-top: 120px;
+    text-align: center;
+    /*background-color: rgb(237, 237, 237);*/
+}
+
+.default-button
+{
+    padding: 18px 27px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.button-container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 790px)
+{
+    #links, #top-button
+    {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 973px) 
+{
+    #header
+    {
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #julieta
+    {
+        position: absolute;
+        display: block;
+        margin-left: 0;
+        margin-top: 120px;   
+        width:100%;
+        max-height: 600px;
+        padding: 0;
+    }
+
+    .title
+    {
+        display: none;
+        padding: 0;
+        width: min-content;
+    }
+    
+    .title-mobile
+    {  
+        display: block;
+    }
+
+    .container
+    {
+        width:100%;
+    }
+}
+
+/*
+http://clagnut.com/blog/348/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://www.samanthaming.com/pictorials/css-inline-vs-inlineblock-vs-block/
+https://bydavidlange.com/fonts-need-stop-using/
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_right
+*/
